@@ -1,5 +1,5 @@
 # Site settings
-title: LILBUDS STUFF
+title: PHOTORAMA
 email: ""
 description: "Photo Journal"
 url: "https://lilbud.github.io"
@@ -15,10 +15,10 @@ share: true
 
 # Owner/author information
 owner:
-  name:   lilbuds-stuff
+  name:   photorama
   avatar: avatar.png
   favicon: favicon.ico
-  info: website for my stuff
+  info: photography website template
 
 # Settings for comments helper
 # Set 'provider' to the comment provider you want to use. (i.e.  Disqus, Intense Debate, livefyre, or Facebook Comments)
@@ -53,7 +53,7 @@ highlighter: rouge
 permalink: pretty
 paginate: 5
 paginate_path: "/journal/page:num/"
-#permalink: "/journal/:title/"
+permalink: "/journal/:title/"
 categories_path: "/journal/category/"
 tags_path: "/journal/tag/"
 gems: 
