@@ -33,8 +33,8 @@ comments :
 
 # Internal nav
 nav:
-  - GALLERY: "https://lilbud.github.io/lilbuds-stuff/gallery/"  
-  - JOURNAL: "https://lilbud.github.io/lilbuds-stuff/journal/"
+  - GRAPHICS: "https://lilbud.github.io/lilbuds-stuff/graphics/"  
+  - MUSIC: "https://lilbud.github.io/lilbuds-stuff/music/"
   - ABOUT: "https://lilbud.github.io/lilbuds-stuff/about/"
 
 # All translation keys
