@@ -1,21 +1,21 @@
 # Site settings
-title: PHOTORAMA
+title: lilbuds stuff
 email: ""
-description: "Photo Journal"
+description: "The (hopefully) final site to host my various musings"
 url: "https://lilbud.github.io"
 baseurl: "/lilbuds-stuff"
-facebook_username: ""
-twitter_username: ""
-instagram_username: ""
-github_username:  ""
-deviantart_username: ""
-flickr_username: ""
-discus_shortname: ""
+#facebook_username: ""
+#twitter_username: ""
+#instagram_username: ""
+#github_username:  ""
+#deviantart_username: ""
+#flickr_username: ""
+#discus_shortname: ""
 share: true
 
 # Owner/author information
 owner:
-  name:   photorama
+  name:   lilbud
   avatar: avatar.png
   favicon: favicon.ico
   info: photography website template
