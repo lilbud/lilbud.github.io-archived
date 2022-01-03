@@ -15,10 +15,10 @@ share: true
 
 # Owner/author information
 owner:
-  name:   photorama
+  name:   lilbuds-stuff
   avatar: avatar.png
   favicon: favicon.ico
-  info: photography website template
+  info: website for my stuff
 
 # Settings for comments helper
 # Set 'provider' to the comment provider you want to use. (i.e.  Disqus, Intense Debate, livefyre, or Facebook Comments)
@@ -33,9 +33,9 @@ comments :
 
 # Internal nav
 nav:
-  - GALLERY: "https://sunbliss.github.io/photorama/gallery/"  
-  - JOURNAL: "https://sunbliss.github.io/photorama/journal/"
-  - ABOUT: "https://sunbliss.github.io/photorama/about/"
+  - GALLERY: "https://lilbud.github.io/lilbuds-stuff/gallery/"  
+  - JOURNAL: "https://lilbud.github.io/lilbuds-stuff/journal/"
+  - ABOUT: "https://lilbud.github.io/lilbuds-stuff/about/"
 
 # All translation keys
 translations:
