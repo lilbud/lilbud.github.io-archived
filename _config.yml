@@ -3,7 +3,7 @@ title: lilbuds stuff
 email: ""
 description: "The (hopefully) final site to host my various musings"
 url: "https://lilbud.github.io"
-baseurl: "/lilbuds-stuff"
+#baseurl: ""
 #facebook_username: ""
 #twitter_username: ""
 #instagram_username: ""
@@ -33,9 +33,9 @@ comments :
 
 # Internal nav
 nav:
-  - GRAPHICS: "https://lilbud.github.io/lilbuds-stuff/graphics/"  
-  - MUSIC: "https://lilbud.github.io/lilbuds-stuff/music/"
-  - ABOUT: "https://lilbud.github.io/lilbuds-stuff/about/"
+  - GRAPHICS: "https://lilbud.github.io/graphics/"  
+  - MUSIC: "https://lilbud.github.io/music/"
+  - ABOUT: "https://lilbud.github.io/about/"
 
 # All translation keys
 translations:
