@@ -35,7 +35,8 @@ comments :
 nav:
   - GRAPHICS: "https://lilbud.github.io/graphics/"  
   - MUSIC: "https://lilbud.github.io/music/"
-  - ABOUT: "https://lilbud.github.io/about/"
+  - OTHER PROJECTS: "https://lilbud.github.io/other_projects/"
+  - ABOUT: "https://lilbud.github.io/about/" 
 
 # All translation keys
 translations:
