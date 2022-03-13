@@ -37,7 +37,7 @@ copyright: © photorama
 			<div class="gallery masonry-gallery">
 
 				<!--{% for image in page.images %}-->
-				{% raw%}{% for image in site.static_files %}
+				{% for image in site.static_files %}
 				{% if image.path contains 'graphics/archive/g02' %}
 				- image_path: <img src="{{ image.path }}" alt="">
 				{% endif %}
