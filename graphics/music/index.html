@@ -4,96 +4,109 @@ title: "Music"
 description: "Primarily Album Covers for Concert Tapes"
 active: gallery
 header-img: "graphics/albums/musicimg.jpg"
-album-title: "Music"
+album-title: "Artists"
 images:
- - image_path: /graphics/archive/g02/bg1.jpg
-   caption: IMAGE TITLE
-   mfp-title: IMAGE TITLE
-   copyright: © photorama
- - image_path: /graphics/archive/g02/bg2.jpg
-   caption: IMAGE TITLE
-   copyright: © photorama
- - image_path: /graphics/archive/g02/bg3.jpg
-   caption: IMAGE TITLE
-   copyright: © photorama
+- image_path: /graphics/archive/g01/bg1.jpg
+gallery-folder: /graphics/music/bruce
+gallery-name: Bruce Springsteen
+- image_path: /graphics/archive/g01/bg2.jpg
+gallery-folder: /graphics/music/
+gallery-name: David Bowie
+- image_path: /graphics/archive/g01/bg3.jpg
+gallery-folder: /graphics/music/
+gallery-name: Grateful Dead
+- image_path: /graphics/archive/g02/bg1.jpg
+gallery-folder: /graphics/music/
+gallery-name: Paul McCartney
+- image_path: /graphics/archive/g02/bg2.jpg
+gallery-folder: /graphics/music/
+gallery-name: Queen
+- image_path: /graphics/archive/g02/bg3.jpg
+gallery-folder: /graphics/music/
+gallery-name: Rolling Stones
+
 ---
 
 <html class="no-js" lang="en">
+
 <head>
-	<meta content="charset=utf-8">
+  <meta content="charset=utf-8">
 </head>
 
-    <body>
- 
-	<section id="content" role="main">
-		<div class="wrapper">
-	<br><br>
-			<h2>{{page.album-title}}</h2>
+<body>
+
+  <section id="content" role="main">
+    <div class="wrapper">
+      <br><br>
+      <h2>{{page.album-title}}</h2>
 
 
-			<!-- Gallery __-->
-			<div class="gallery masonry-gallery">
-		
-{% for image in page.images %}  		
+      <!-- Gallery __-->
+      <div class="gallery masonry-gallery">
 
-				<figure class="gallery-item">
-					<header class='gallery-icon'>
+        {% for image in page.images %}
 
-<a href="{{ site.url }}{{ site.baseurl }}{{ image.image_path }}" class="popup" title="{{ image.caption }}" data-caption="{{ image.copyright }}">
-<img src="{{ site.url }}{{ site.baseurl }}{{ image.image_path }}"></a>
-						
-					</header>	
-					<figcaption class='gallery-caption'>
-						<div class="entry-summary">
-							<h3>{{image.caption}}</h3>
-							<p>{{image.copyright}}</p>
-						</div>
-					</figcaption>
-				</figure>
-				
-{% endfor %}
+        <figure class="gallery-item">
+          <header class='gallery-icon'>
 
-			</div>
+            <a href="{{ site.url }}{{ site.baseurl }}{{ image.image_path }}" class="popup" title="{{ image.caption }}"
+              data-caption="{{ image.copyright }}">
+              <img src="{{ site.url }}{{ site.baseurl }}{{ image.image_path }}"></a>
 
-		</div><!-- END .wrapper -->
-	</section>
+          </header>
+          <figcaption class='gallery-caption'>
+            <div class="entry-summary">
+              <h3>{{image.caption}}</h3>
+              <p>{{image.copyright}}</p>
+            </div>
+          </figcaption>
+        </figure>
 
-<!-- jQuery -->    
+        {% endfor %}
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<!-- include image popups -->
-<script src="{{ site.baseurl }}/js/jquery.magnific-popup.js"></script>
-<script src="{{ site.baseurl }}/js/retina.min.js"></script>
-<!-- include Masonry -->
-<script src="{{ site.baseurl }}/js/isotope.pkgd.min.js"></script> 
-<!-- include mousewheel plugins -->
-<script src="{{ site.baseurl }}/js/jquery.mousewheel.min.js"></script>
-<!-- include carousel plugins -->
-<script src="{{ site.baseurl}}/js/jquery.tinycarousel.min.js"></script>
-<!-- include svg line drawing plugin -->
-<script src="{{ site.baseurl }}/js/jquery.lazylinepainter.min.js"></script>
-<!-- include custom script -->
-<script src="{{ site.baseurl }}/js/scripts.js"></script>
-<!-- Modernizr -->
- <script src="{{ site.baseurl }}/js/modernizr.js"></script>
+      </div>
 
-    <script type="text/javascript">
-      $(document).ready(function($) {
-        $('a.popup').magnificPopup({
-          type: 'image',
-	  gallery:{
-         enabled:true,
-         navigateByImgClick: true,
-         preload: [0,1] // Will preload 0 - before current, and 1 after the current image
-       },
-      image: {
-         titleSrc: function(item) {
-             return item.el.attr('title') + '&nbsp;' + item.el.attr('data-caption');
-            }
+    </div><!-- END .wrapper -->
+  </section>
+
+  <!-- jQuery -->
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <!-- include image popups -->
+  <script src="{{ site.baseurl }}/js/jquery.magnific-popup.js"></script>
+  <script src="{{ site.baseurl }}/js/retina.min.js"></script>
+  <!-- include Masonry -->
+  <script src="{{ site.baseurl }}/js/isotope.pkgd.min.js"></script>
+  <!-- include mousewheel plugins -->
+  <script src="{{ site.baseurl }}/js/jquery.mousewheel.min.js"></script>
+  <!-- include carousel plugins -->
+  <script src="{{ site.baseurl}}/js/jquery.tinycarousel.min.js"></script>
+  <!-- include svg line drawing plugin -->
+  <script src="{{ site.baseurl }}/js/jquery.lazylinepainter.min.js"></script>
+  <!-- include custom script -->
+  <script src="{{ site.baseurl }}/js/scripts.js"></script>
+  <!-- Modernizr -->
+  <script src="{{ site.baseurl }}/js/modernizr.js"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function ($) {
+      $('a.popup').magnificPopup({
+        type: 'image',
+        gallery: {
+          enabled: true,
+          navigateByImgClick: true,
+          preload: [0, 1] // Will preload 0 - before current, and 1 after the current image
+        },
+        image: {
+          titleSrc: function (item) {
+            return item.el.attr('title') + '&nbsp;' + item.el.attr('data-caption');
+          }
         }
-          // other options
+        // other options
       });
-});
-    </script>
+    });
+  </script>
 
-</body></html>
+</body>
+
+</html>
