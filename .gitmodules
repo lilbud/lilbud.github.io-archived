@@ -1,4 +1,4 @@
 [submodule "graphics/bootleg-covers"]
 	path = graphics/bootleg-covers
 	url = https://github.com/lilbud/Bootleg-Covers
-	ignore = dirty
+	ignore = all
