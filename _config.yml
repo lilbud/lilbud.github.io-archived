@@ -75,6 +75,6 @@ sitemap:
 
 defaults:
     - scope:
-        path: "graphics/archive/g1"
+        path: "graphics/archive/g02"
         values:
             image: true
