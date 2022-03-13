@@ -5,13 +5,6 @@ description: "Various Graphics for RetroPie/Retroarch"
 active: gallery
 header-img: "graphics/albums/emulationimg.jpg"
 album-title: "Emulation"
-images:
- - image_path: /graphics/archive/g01/bg1.jpg
-   caption: IMAGE TITLE
- - image_path: /graphics/archive/g01/bg2.jpg
-   caption: IMAGE TITLE
- - image_path: /graphics/archive/g01/bg3.jpg
-   caption: IMAGE TITLE
 ---
 
 <html class="no-js" lang="en">
@@ -21,38 +14,34 @@ images:
 
     <body>
  
-	<section id="content" role="main">
-		<div class="wrapper">
-	<br><br>
-			<h2>{{page.album-title}}</h2>
-
-
-			<!-- Gallery __-->
-			<div class="gallery masonry-gallery">
-		
-{% for image in page.images %}  		
-
-				<figure class="gallery-item">
-					<header class='gallery-icon'>
-
-<a href="{{ site.url }}{{ site.baseurl }}{{ image.image_path }}" class="popup"  title="{{ image.caption }}" data-caption="{{ image.copyright }}">
-<img src="{{ site.url }}{{ site.baseurl }}{{ image.image_path }}"></a>
+		<section id="content" role="main">
+			<div class="wrapper">
+		<br><br>
+				<h2>{{page.album-title}}</h2>
+	
+	
+				<!-- Gallery __-->
+				<div class="gallery masonry-gallery">
+					
+			{% for image in site.static_files %}
+			{% if image.path contains 'graphics/archive/g06' %}
+	
+			<figure class="gallery-item">
+						<header class='gallery-icon'>
+	
+				<a href="{{ site.url }}{{ site.baseurl }}{{ image.path }}" class="popup" title="{{ image.name }}" data-caption="">
+				<img src="{{ site.url }}{{ site.baseurl }}{{ image.path }}" >
+				</a>
+							
+						</header>	
 						
-					</header>	
-					<figcaption class='gallery-caption'>
-						<div class="entry-summary" id="{{ image.caption }}">
-							<h3>{{image.caption}}</h3>
-							<p>{{image.copyright}}</p>
-						</div>
-					</figcaption>
-				</figure>
-				
-{% endfor %}
-
-			</div>
-
-		</div><!-- END .wrapper -->
-	</section>
+					</figure>
+			{% endif %}
+			{%endfor%}
+				</div>
+	
+			</div><!-- END .wrapper -->
+		</section>
 
 <!-- jQuery -->    
 
