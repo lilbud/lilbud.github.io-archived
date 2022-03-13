@@ -75,6 +75,6 @@ sitemap:
 
 defaults:
     - scope:
-        path: "https://github.com/lilbud/Bootleg-Covers/tree/main/Bruce%20Springsteen/Covers/%5B1973%20-%201974%5D%5BThe%20Early%20Years%5D"
+        path: "/graphics/archive"
         values:
             image: true
