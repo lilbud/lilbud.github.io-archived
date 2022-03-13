@@ -6,7 +6,12 @@ active: gallery
 header-img: "graphics/albums/musicimg.jpg"
 album-title: "Artists"
 images:
-
+   
+	{% assign image_files = site.static_files | where: "image", true %}
+	{% for myimage in image_files %}
+	- image_path: {{ myimage.path }}
+	- caption: {{ myimage.basename }}
+	{% endfor %}
 ---
 
 <html class="no-js" lang="en">
