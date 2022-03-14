@@ -74,6 +74,3 @@ sitemap:
     change_frequency_name: "change_frequency"
     priority_name: "priority"
   
-plugins:
-  - jekyll-conrefifier
-  
