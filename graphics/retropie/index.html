@@ -1,0 +1,81 @@
+---
+layout: page
+title: "RetroPie"
+description: "Various Graphics for Retropie"
+active: gallery
+header-img: "graphics/retropie/header.png"
+images:
+ - image_path: /graphics/retropie/header.png
+   gallery-folder: /graphics/retropie/splashscreens
+   gallery-name: Themes
+ - image_path: /graphics/retropie/header.png
+   gallery-folder: /graphics/retropie/splashscreens
+   gallery-name: Splashscreens
+---
+
+<html class="no-js" lang="en">
+
+<head>
+    <meta content="charset=utf-8">
+    <link rel="stylesheet" href="{{ " /css/selena.css" | prepend: site.baseurl }}">
+</head>
+
+
+<body class="gallery">
+
+    <section id="content" role="main">
+        <div class="wrapper">
+
+            <h2>{{page.title}}</h2>
+
+            <!-- Gallery __-->
+            <div class="gallery masonry-gallery">
+
+                {% for image in page.images %}
+
+                <figure class="gallery-item">
+                    <figure class="effect-selena">
+                        <header class='gallery-icon'>
+
+                            <a href="{{ site.url }}{{ site.baseurl }}{{ image.gallery-folder }}">
+                                <img src="{{ site.url }}{{ site.baseurl }}{{ image.image_path }}"></a>
+
+                        </header>
+                        <figcaption class='gallery-caption'>
+                            
+                                <center><h2>{{image.gallery-name}}</h2></center>
+                                
+                        </figcaption>
+                    </figure>
+                </figure>
+
+                {% endfor %}
+
+            </div>
+
+        </div><!-- END .wrapper -->
+    </section>
+
+
+    <br>
+
+    <!-- jQuery -->
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="{{ site.baseurl }}/js/retina.min.js"></script>
+    <!-- include Masonry -->
+    <script src="{{ site.baseurl }}/js/isotope.pkgd.min.js"></script>
+    <!-- include mousewheel plugins -->
+    <script src="{{ site.baseurl }}/js/jquery.mousewheel.min.js"></script>
+    <!-- include carousel plugins -->
+    <script src="{{ site.baseurl}}/js/jquery.tinycarousel.min.js"></script>
+    <!-- include svg line drawing plugin -->
+    <script src="{{ site.baseurl }}/js/jquery.lazylinepainter.min.js"></script>
+    <!-- include custom script -->
+    <script src="{{ site.baseurl }}/js/scripts.js"></script>
+    <!-- Modernizr -->
+    <script src="{{ site.baseurl }}/js/modernizr.js"></script>
+
+</body>
+
+</html>
