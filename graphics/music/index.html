@@ -5,87 +5,90 @@ description: "Covers for Concert Tapes"
 active: gallery
 header-img: "graphics/albums/musicimg.jpg"
 images:
- - image_path: /graphics/music/_images/artist_img/bruce.png
+ - image_path: /graphics/music/images/artist_img/bruce.png
    gallery-folder: /graphics/music/artists/bruce
    gallery-name: Bruce Springsteen
-   - image_path: /graphics/music/_images/artist_img/davidbowie.png
+ - image_path: /graphics/music/images/artist_img/davidbowie.png
    gallery-folder: /graphics/music/artists/david_bowie
    gallery-name: David Bowie
-   - image_path: /graphics/music/_images/artist_img/dead.png
+ - image_path: /graphics/music/images/artist_img/dead.png
    gallery-folder: /graphics/music/artists/grateful_dead
    gallery-name: Grateful Dead
-   - image_path: /graphics/music/_images/artist_img/paulmc.png
+ - image_path: /graphics/music/images/artist_img/paulmc.png
    gallery-folder: /graphics/music/artists/paul_mccartney
    gallery-name: Paul McCartney
-   - image_path: /graphics/music/_images/artist_img/queen.png
+ - image_path: /graphics/music/images/artist_img/queen.png
    gallery-folder: /graphics/music/artists/queen
    gallery-name: Queen
-   - image_path: /graphics/music/_images/artist_img/stones.png
+ - image_path: /graphics/music/images/artist_img/stones.png
    gallery-folder: /graphics/music/artists/stones
    gallery-name: The Rolling Stones
 ---
 
 <html class="no-js" lang="en">
+
 <head>
-	<meta content="charset=utf-8">
-    <link rel="stylesheet" href="{{ "/css/selena.css" | prepend: site.baseurl }}">
+    <meta content="charset=utf-8">
+    <link rel="stylesheet" href="{{ " /css/selena.css" | prepend: site.baseurl }}">
 </head>
 
 
-    <body class="gallery">
- 
-	<section id="content" role="main">
-		<div class="wrapper">
-	
-			<h2>{{page.title}}</h2>
-			
-			<!-- Gallery __-->
-			<div class="gallery masonry-gallery">
-				
-{% for image in page.images %}  	
+<body class="gallery">
 
-	               <figure class="gallery-item">
-                         <figure class="effect-selena">
-					<header class='gallery-icon'>
-		       
-<a href="{{ site.url }}{{ site.baseurl }}{{ image.gallery-folder }}">
-<img src="{{ site.url }}{{ site.baseurl }}{{ image.image_path }}"></a>
+    <section id="content" role="main">
+        <div class="wrapper">
 
-					</header>	
-					<figcaption class='gallery-caption'>
-						<div class="entry-summary">
-							<h3>{{image.gallery-name}}</h3>
-							<p>{{image.gallery-date}}</p>
-						</div>
-					</figcaption>
-                       </figure>
-				</figure>
-							
-{% endfor %}		
-				
-			</div>
-			
-		</div><!-- END .wrapper -->
-	</section>
+            <h2>{{page.title}}</h2>
+
+            <!-- Gallery __-->
+            <div class="gallery masonry-gallery">
+
+                {% for image in page.images %}
+
+                <figure class="gallery-item">
+                    <figure class="effect-selena">
+                        <header class='gallery-icon'>
+
+                            <a href="{{ site.url }}{{ site.baseurl }}{{ image.gallery-folder }}">
+                                <img src="{{ site.url }}{{ site.baseurl }}{{ image.image_path }}"></a>
+
+                        </header>
+                        <figcaption class='gallery-caption'>
+                            <div class="entry-summary">
+                                <h3>{{image.gallery-name}}</h3>
+                                <p>{{image.gallery-date}}</p>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </figure>
+
+                {% endfor %}
+
+            </div>
+
+        </div><!-- END .wrapper -->
+    </section>
 
 
-<br>
+    <br>
 
-<!-- jQuery -->    
+    <!-- jQuery -->
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<script src="{{ site.baseurl }}/js/retina.min.js"></script>
-<!-- include Masonry -->
-<script src="{{ site.baseurl }}/js/isotope.pkgd.min.js"></script> 
-<!-- include mousewheel plugins -->
-<script src="{{ site.baseurl }}/js/jquery.mousewheel.min.js"></script>
-<!-- include carousel plugins -->
-<script src="{{ site.baseurl}}/js/jquery.tinycarousel.min.js"></script>
-<!-- include svg line drawing plugin -->
-<script src="{{ site.baseurl }}/js/jquery.lazylinepainter.min.js"></script>
-<!-- include custom script -->
-<script src="{{ site.baseurl }}/js/scripts.js"></script>
-<!-- Modernizr -->
- <script src="{{ site.baseurl }}/js/modernizr.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="{{ site.baseurl }}/js/retina.min.js"></script>
+    <!-- include Masonry -->
+    <script src="{{ site.baseurl }}/js/isotope.pkgd.min.js"></script>
+    <!-- include mousewheel plugins -->
+    <script src="{{ site.baseurl }}/js/jquery.mousewheel.min.js"></script>
+    <!-- include carousel plugins -->
+    <script src="{{ site.baseurl}}/js/jquery.tinycarousel.min.js"></script>
+    <!-- include svg line drawing plugin -->
+    <script src="{{ site.baseurl }}/js/jquery.lazylinepainter.min.js"></script>
+    <!-- include custom script -->
+    <script src="{{ site.baseurl }}/js/scripts.js"></script>
+    <!-- Modernizr -->
+    <script src="{{ site.baseurl }}/js/modernizr.js"></script>
 
-</body></html>
+</body>
+
+</html>
