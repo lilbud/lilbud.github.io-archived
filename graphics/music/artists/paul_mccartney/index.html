@@ -1,85 +1,80 @@
 ---
 layout: page
-title: "Music"
-description: "Album Covers for Concert Tapes"
+title: "Paul McCartney"
+description: "Album Covers for Dead Concert Tapes"
 active: gallery
-header-img: "graphics/albums/musicimg.jpg"
-album-title: "Artists"
+header-img: graphics/music/images/artist_img/paulmc.png
+album-title: "Years"
+images:
+ - image_path:  /graphics/music/images/artist_img/paulmc.png
+   gallery-folder: /graphics/music/artists/paul_mccartney/1989
+   gallery-name: 1989
+
 ---
 
 <html class="no-js" lang="en">
+
 <head>
-	<meta content="charset=utf-8">
+    <meta content="charset=utf-8">
+    <link rel="stylesheet" href="{{ " /css/selena.css" | prepend: site.baseurl }}">
 </head>
 
-    <body>
- 
-	<section id="content" role="main">
-		<div class="wrapper">
-	<br><br>
-			<h2>{{page.album-title}}</h2>
+
+<body class="gallery">
+
+    <section id="content" role="main">
+        <div class="wrapper">
+
+            <h2>{{page.album-title}}</h2>
+
+            <!-- Gallery __-->
+            <div class="gallery masonry-gallery">
+
+                {% for image in page.images %}
+
+                <figure class="gallery-item">
+                    <figure class="effect-selena">
+                        <header class='gallery-icon'>
+
+                            <a href="{{ site.url }}{{ site.baseurl }}{{ image.gallery-folder }}">
+                                <img src="{{ site.url }}{{ site.baseurl }}{{ image.image_path }}"></a>
+
+                        </header>
+                        <figcaption class='gallery-caption'>
+                            
+                            <center><h2>{{image.gallery-name}}</h2></center>
+                            
+                        </figcaption>
+                    </figure>
+                </figure>
+
+                {% endfor %}
+
+            </div>
+
+        </div><!-- END .wrapper -->
+    </section>
 
 
-			<!-- Gallery __-->
-			<div class="gallery masonry-gallery">
-				
-        {% for image in site.static_files %}
-        {% if image.path contains 'graphics/archive/g06' %}
+    <br>
 
-        <figure class="gallery-item">
-					<header class='gallery-icon'>
+    <!-- jQuery -->
 
-            <a href="{{ site.url }}{{ site.baseurl }}{{ image.path }}" class="popup" title="{{ image.basename }}" data-caption="">
-            <img src="{{ site.url }}{{ site.baseurl }}{{ image.path }}" title="{{ image.basename }}" data-caption="">
-            </a>
-						
-					</header>	
-					
-				</figure>
-        {% endif %}
-		{%endfor%}
-			</div>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="{{ site.baseurl }}/js/retina.min.js"></script>
+    <!-- include Masonry -->
+    <script src="{{ site.baseurl }}/js/isotope.pkgd.min.js"></script>
+    <!-- include mousewheel plugins -->
+    <script src="{{ site.baseurl }}/js/jquery.mousewheel.min.js"></script>
+    <!-- include carousel plugins -->
+    <script src="{{ site.baseurl}}/js/jquery.tinycarousel.min.js"></script>
+    <!-- include svg line drawing plugin -->
+    <script src="{{ site.baseurl }}/js/jquery.lazylinepainter.min.js"></script>
+    <!-- include custom script -->
+    <script src="{{ site.baseurl }}/js/scripts.js"></script>
+    <!-- Modernizr -->
+    <script src="{{ site.baseurl }}/js/modernizr.js"></script>
 
-		</div><!-- END .wrapper -->
-	</section>
+</body>
 
-<!-- jQuery -->    
-
-<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<!-- include image popups -->
-<script src="{{ site.baseurl }}/js/jquery.magnific-popup.js"></script>
-
-<script type="text/javascript">
-      $(document).ready(function($) {
-        $('a.popup').magnificPopup({
-         type: 'image',
-	  gallery:{
-         enabled:true,
-         navigateByImgClick: true,
-         preload: [0,1] // Will preload 0 - before current, and 1 after the current image
-       },
-image: {
-      titleSrc: function(item) {
-              return item.el.attr('title') + '&nbsp;' + item.el.attr('data-caption');
-            }
-        }
-          // other options
-      });
-});
-    </script>
-
-<script src="{{ site.baseurl }}/js/retina.min.js"></script>
-<!-- include Masonry -->
-<script src="{{ site.baseurl }}/js/isotope.pkgd.min.js"></script> 
-<!-- include mousewheel plugins -->
-<script src="{{ site.baseurl }}/js/jquery.mousewheel.min.js"></script>
-<!-- include carousel plugins -->
-<script src="{{ site.baseurl}}/js/jquery.tinycarousel.min.js"></script>
-<!-- include svg line drawing plugin -->
-<script src="{{ site.baseurl }}/js/jquery.lazylinepainter.min.js"></script>
-<!-- include custom script -->
-<script src="{{ site.baseurl }}/js/scripts.js"></script>
-<!-- Modernizr -->
- <script src="{{ site.baseurl }}/js/modernizr.js"></script>
-    
-</body></html>
+</html>
