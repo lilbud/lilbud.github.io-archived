@@ -58,6 +58,12 @@ hr.small {
 .navbar-custom .navbar-brand {
   font-weight: 800;
 }
+
+.blurr-shadow{
+	text-shadow:3px 3px 5px #101010;
+    color:#fff;
+}
+
 .navbar-custom .nav li a {
   color: white;
   text-transform: uppercase;

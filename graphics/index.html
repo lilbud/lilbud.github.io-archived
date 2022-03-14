@@ -6,10 +6,10 @@ active: gallery
 header-img: "img/graphics-bg.jpg"
 images:
  - image_path: /graphics/music/header.png
-   gallery-folder: graphics/music
+   gallery-folder: /graphics/music/
    gallery-name: Music
  - image_path: /graphics/retropie/header.png
-   gallery-folder: graphics/retropie
+   gallery-folder: /graphics/retropie/
    gallery-name: RetroPie
 ---
 
@@ -44,10 +44,8 @@ images:
 <img src="{{ site.url }}{{ site.baseurl }}{{ image.image_path }}"></a>
 
 					</header>	
-					<figcaption class='gallery-caption'>
-						
-							<center><h4>{{image.gallery-name}}</h4></center>
-							
+					<figcaption class='gallery-caption'>					
+							<center><h2><a class="blurr-shadow">{{image.gallery-name}}</p></h2></center>		
 					</figcaption>
                        </figure>
 				</figure>
