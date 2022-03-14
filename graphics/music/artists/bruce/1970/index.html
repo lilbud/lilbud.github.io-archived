@@ -24,7 +24,7 @@ album-title: "Artists"
 			<div class="gallery masonry-gallery">
 				
         {% for image in site.static_files %}
-        {% if image.path contains "Bruce_Springsteen/Covers/1970" %}
+        {% if image.path contains "Bruce_Springsteen/Covers/{{ page.title }}" %}
 
         <figure class="gallery-item">
 					<header class='gallery-icon'>
