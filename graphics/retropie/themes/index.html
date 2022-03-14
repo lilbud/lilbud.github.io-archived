@@ -1,0 +1,110 @@
+---
+layout: page
+title: "Themes"
+description: "RetroPie Themes"
+active: gallery
+header-img: graphics/retropie/header.png
+---
+
+<html class="no-js" lang="en">
+<head>
+	<meta content="charset=utf-8">
+</head>
+
+    <body>
+ 
+	<section id="content" role="main">
+		<div class="wrapper">
+	<br><br>
+			<h4>The following themes were made from 2015 to 2019. I don't have any interest in theme development anymore so I unfortunately can't provide any help or support.</h4><br>
+
+
+			<!-- Gallery __-->
+			<div class="gallery masonry-gallery">
+				
+        {% for image in site.static_files %}
+        {% if image.path contains "images/themes/1" %}
+
+        <figure class="gallery-item">
+					<header class='gallery-icon'>
+            <a href="{{ site.url }}{{ site.baseurl }}{{ image.path }}" class="popup" title="{{ image.basename }}" data-caption="">
+            <img src="{{ site.url }}{{ site.baseurl }}{{ image.path }}" title="{{ image.basename }}" data-caption="">
+            </a>					           
+					</header>	  
+				</figure>
+                	
+        {% endif %}       
+		{%endfor%}       
+			</div>
+            <h4>Themes in order (L to R):<br><br><a href="https://github.com/lilbud/es-theme-minimal">Material Theme</a> - My first theme, had to get a ton of help over IRC Chat because it crashed the frontend<br><br>
+                <a href="https://github.com/lilbud/es-theme-moderntv">Modern TV</a> - Actually an edit of a theme by another creator, Rookervik. My edits consisted of a gridview and a new <br>layout for the gamelist.<br><br>
+                <a href="https://github.com/lilbud/es-theme-flat">Flat Theme</a> - Still one of my favorites due to how well it turned out. Both light and dark themes.<br><br>
+                <a href="https://github.com/lilbud/es-theme-flat-dark">Dark Version of Flat Theme</a></h4><br>
+
+            <div class="gallery masonry-gallery">
+				
+                {% for image in site.static_files %}
+                {% if image.path contains "images/themes/2" %}
+        
+                <figure class="gallery-item">
+                            <header class='gallery-icon'>
+                    <a href="{{ site.url }}{{ site.baseurl }}{{ image.path }}" class="popup" title="{{ image.basename }}" data-caption="">
+                    <img src="{{ site.url }}{{ site.baseurl }}{{ image.path }}" title="{{ image.basename }}" data-caption="">
+                    </a>					           
+                            </header>	  
+                        </figure>
+                            
+                {% endif %}       
+                {%endfor%}       
+                    </div>
+                    <h4>Themes in order (L to R):<br><br><a href="https://github.com/lilbud/es-theme-minimal/">Minimal Theme</a> - Whats shown is actually the second revision of the gamelist, made to look like the Kodi default theme.<br>
+                        the first version I don't have any shots of. First time using system variables<br><br>
+                        <a href="https://github.com/lilbud/es-theme-switch/">Switch Theme</a> - Another one of my favorites due to the simplicity of it. I based the layout off of Grila's Switch Theme for Launchbox.<br><br>
+                        <a href="https://github.com/lilbud/es-theme-angular/">Angular Theme</a> - Last theme I made for retropie. I was bringing my custom arcade cabinet into school to show off to my programming class
+                        and I wanted a theme to go with it.<br><br>
+                        </h4><br>
+
+            
+		</div><!-- END .wrapper -->
+	</section>
+
+<!-- jQuery -->    
+
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<!-- include image popups -->
+<script src="{{ site.baseurl }}/js/jquery.magnific-popup.js"></script>
+
+<script type="text/javascript">
+      $(document).ready(function($) {
+        $('a.popup').magnificPopup({
+         type: 'image',
+	  gallery:{
+         enabled:true,
+         navigateByImgClick: true,
+         preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+       },
+image: {
+      titleSrc: function(item) {
+              return item.el.attr('title') + '&nbsp;' + item.el.attr('data-caption');
+            }
+        }
+          // other options
+      });
+});
+    </script>
+
+<script src="{{ site.baseurl }}/js/retina.min.js"></script>
+<!-- include Masonry -->
+<script src="{{ site.baseurl }}/js/isotope.pkgd.min.js"></script> 
+<!-- include mousewheel plugins -->
+<script src="{{ site.baseurl }}/js/jquery.mousewheel.min.js"></script>
+<!-- include carousel plugins -->
+<script src="{{ site.baseurl}}/js/jquery.tinycarousel.min.js"></script>
+<!-- include svg line drawing plugin -->
+<script src="{{ site.baseurl }}/js/jquery.lazylinepainter.min.js"></script>
+<!-- include custom script -->
+<script src="{{ site.baseurl }}/js/scripts.js"></script>
+<!-- Modernizr -->
+ <script src="{{ site.baseurl }}/js/modernizr.js"></script>
+    
+</body></html>
