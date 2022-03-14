@@ -34,9 +34,9 @@ comments :
 # Internal nav
 nav:
   - GRAPHICS: "https://lilbud.github.io/graphics/"  
-  - MUSIC: "https://lilbud.github.io/music/"
-  - OTHER PROJECTS: "https://lilbud.github.io/other_projects/"
-  - ABOUT: "https://lilbud.github.io/about/" 
+  #- MUSIC: "https://lilbud.github.io/music/"
+  #- OTHER PROJECTS: "https://lilbud.github.io/other_projects/"
+  #- ABOUT: "https://lilbud.github.io/about/" 
 
 # All translation keys
 translations:
@@ -59,14 +59,7 @@ categories_path: "/journal/category/"
 tags_path: "/journal/tag/"
 gems: 
  - jekyll-paginate
- - jekyll-conrefifier
 exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
-
-plugins:
-  - jekyll-conrefifier
-
-whitelist:
- - jekyll-conrefifier
 
 # SiteMap
 sitemap:
