@@ -22,10 +22,10 @@ figure.effect-selena:hover img {
 }
 
 figure.effect-selena h2 {
-	-webkit-transition: -webkit-transform 0.35s;
-	transition: transform 0.35s;
-	-webkit-transform: translate3d(0,20px,0);
-	transform: translate3d(0,20px,0);
+	-webkit-transition: -webkit-transform 0s;
+	transition: transform 0;
+	-webkit-transform: translate3d(0,0px,0);
+	transform: translate3d(0,0px,0);
 }
 
 figure.effect-selena p {
