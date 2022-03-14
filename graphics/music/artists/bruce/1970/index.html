@@ -3,7 +3,7 @@ layout: page
 title: "1970"
 description: "Album Covers for Concert Tapes"
 active: gallery
-header-img: "graphics\music\artists\bruce\"
+header-img: graphics/music/artists/bruce/{{ page.title }}/{{ page.title }}.png
 album-title: "Artists"
 ---
 
@@ -19,7 +19,6 @@ album-title: "Artists"
 	<br><br>
 			<h2>{{page.album-title}}</h2>
 
-      {% assign header-img = header-img  | append "{{ page.title }}\{{page.title}}.png" %}
 
 			<!-- Gallery __-->
 			<div class="gallery masonry-gallery">
