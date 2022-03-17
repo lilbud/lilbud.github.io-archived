@@ -21,16 +21,17 @@ h6 {
   font-weight: 800;
 }
 a {
-  color: #760824;
+  color: #1ba4ce;
   transition: color .4s;
-  text-decoration: none;
+  text-decoration: underline;
 }
 a:hover,
 a:focus {
-  color: #fff;
+  color: rgb(158, 40, 40);
      transition: color .3s;
     outline: none;
     text-shadow:none;
+    text-decoration: underline;
 }
 a img:hover,
 a img:focus {
