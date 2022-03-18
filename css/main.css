@@ -38,6 +38,26 @@ a img:focus {
   cursor: zoom-in;
   outline: none;
 }
+
+a2 {
+  color: #1ba4ce;
+  transition: color .4s;
+  text-decoration: none;
+}
+a2:hover,
+a2:focus {
+  color: rgb(158, 40, 40);
+     transition: color .3s;
+    outline: none;
+    text-shadow:none;
+    text-decoration: none;
+}
+a2 img:hover,
+a2 img:focus {
+  cursor: zoom-in;
+  outline: none;
+}
+
 blockquote {
   color: #808080;
   font-style: italic;
