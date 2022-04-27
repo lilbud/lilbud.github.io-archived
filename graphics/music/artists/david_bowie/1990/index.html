@@ -19,6 +19,8 @@ album-title: "Shows"
 	<br><br>
 			<h2>{{page.album-title}}</h2>
 
+      <h2>{{page.album-title}}</h2><center><a href="https://download-directory.github.io?url=https://github.com/lilbud/Bootleg-Covers/tree/main/David_Bowie/Covers/{{ page.title }}">Download All Covers</a></center><br>
+
 
 			<!-- Gallery __-->
 			<div class="gallery masonry-gallery">
@@ -29,7 +31,7 @@ album-title: "Shows"
         <figure class="gallery-item">
 					<header class='gallery-icon'>
 
-            <a href="{{ site.url }}{{ site.baseurl }}{{ image.path }}" class="popup" title="{{ image.basename }}" data-caption="">
+            <a href="{{ site.url }}{{ site.baseurl }}{{ image.path width: 600 }}" class="popup" title="{{ image.basename }}" data-caption="">
             <img src="{{ site.url }}{{ site.baseurl }}{{ image.path }}" title="{{ image.basename }}" data-caption="">
             </a>
 						
