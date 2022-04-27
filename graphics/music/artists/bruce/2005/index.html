@@ -8,78 +8,85 @@ album-title: "Shows"
 ---
 
 <html class="no-js" lang="en">
+
 <head>
-	<meta content="charset=utf-8">
+  <meta content="charset=utf-8">
 </head>
 
-    <body>
- 
-	<section id="content" role="main">
-		<div class="wrapper">
-	<br><br>
-			<h2>{{page.album-title}}</h2>
+<body>
+
+  <section id="content" role="main">
+    <div class="wrapper">
+      <br><br>
+      <h2>{{page.album-title}}</h2>
+      <center><a
+          href="https://download-directory.github.io?url=https://github.com/lilbud/Bootleg-Covers/tree/main/Bruce_Springsteen/Covers/{{ page.title }}">Download
+          All Covers</a></center><br>
 
 
-			<!-- Gallery __-->
-			<div class="gallery masonry-gallery">
-				
+      <!-- Gallery __-->
+      <div class="gallery masonry-gallery">
+
         {% for image in site.static_files %}
         {% if image.path contains "Bruce_Springsteen/Covers/2005" %}
 
         <figure class="gallery-item">
-					<header class='gallery-icon'>
+          <header class='gallery-icon'>
 
-            <a href="{{ site.url }}{{ site.baseurl }}{{ image.path width: 500 }}" class="popup" title="{{ image.basename }}" data-caption="">
-            <img src="{{ site.url }}{{ site.baseurl }}{{ image.path }}" title="{{ image.basename }}" data-caption="">
+            <a href="{{ site.url }}{{ site.baseurl }}{{ image.path width: 500 }}" class="popup"
+              title="{{ image.basename }}" data-caption="">
+              <img src="{{ site.url }}{{ site.baseurl }}{{ image.path }}" title="{{ image.basename }}" data-caption="">
             </a>
-						
-					</header>	
-					
-				</figure>
+
+          </header>
+
+        </figure>
         {% endif %}
-		{%endfor%}
-			</div>
+        {%endfor%}
+      </div>
 
-		</div><!-- END .wrapper -->
-	</section>
+    </div><!-- END .wrapper -->
+  </section>
 
-<!-- jQuery -->    
+  <!-- jQuery -->
 
-<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<!-- include image popups -->
-<script src="{{ site.baseurl }}/js/jquery.magnific-popup.js"></script>
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <!-- include image popups -->
+  <script src="{{ site.baseurl }}/js/jquery.magnific-popup.js"></script>
 
-<script type="text/javascript">
-      $(document).ready(function($) {
-        $('a.popup').magnificPopup({
-         type: 'image',
-	  gallery:{
-         enabled:true,
-         navigateByImgClick: true,
-         preload: [0,1] // Will preload 0 - before current, and 1 after the current image
-       },
-image: {
-      titleSrc: function(item) {
-              return item.el.attr('title') + '&nbsp;' + item.el.attr('data-caption');
-            }
+  <script type="text/javascript">
+    $(document).ready(function ($) {
+      $('a.popup').magnificPopup({
+        type: 'image',
+        gallery: {
+          enabled: true,
+          navigateByImgClick: true,
+          preload: [0, 1] // Will preload 0 - before current, and 1 after the current image
+        },
+        image: {
+          titleSrc: function (item) {
+            return item.el.attr('title') + '&nbsp;' + item.el.attr('data-caption');
+          }
         }
-          // other options
+        // other options
       });
-});
-    </script>
+    });
+  </script>
 
-<script src="{{ site.baseurl }}/js/retina.min.js"></script>
-<!-- include Masonry -->
-<script src="{{ site.baseurl }}/js/isotope.pkgd.min.js"></script> 
-<!-- include mousewheel plugins -->
-<script src="{{ site.baseurl }}/js/jquery.mousewheel.min.js"></script>
-<!-- include carousel plugins -->
-<script src="{{ site.baseurl}}/js/jquery.tinycarousel.min.js"></script>
-<!-- include svg line drawing plugin -->
-<script src="{{ site.baseurl }}/js/jquery.lazylinepainter.min.js"></script>
-<!-- include custom script -->
-<script src="{{ site.baseurl }}/js/scripts.js"></script>
-<!-- Modernizr -->
- <script src="{{ site.baseurl }}/js/modernizr.js"></script>
-    
-</body></html>
+  <script src="{{ site.baseurl }}/js/retina.min.js"></script>
+  <!-- include Masonry -->
+  <script src="{{ site.baseurl }}/js/isotope.pkgd.min.js"></script>
+  <!-- include mousewheel plugins -->
+  <script src="{{ site.baseurl }}/js/jquery.mousewheel.min.js"></script>
+  <!-- include carousel plugins -->
+  <script src="{{ site.baseurl}}/js/jquery.tinycarousel.min.js"></script>
+  <!-- include svg line drawing plugin -->
+  <script src="{{ site.baseurl }}/js/jquery.lazylinepainter.min.js"></script>
+  <!-- include custom script -->
+  <script src="{{ site.baseurl }}/js/scripts.js"></script>
+  <!-- Modernizr -->
+  <script src="{{ site.baseurl }}/js/modernizr.js"></script>
+
+</body>
+
+</html>
