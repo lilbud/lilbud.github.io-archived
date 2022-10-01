@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="shortcut icon" type="image/ico" href="http://www.datatables.net/favicon.ico">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, user-scalable=no">
+	<title>DataTables example - Javascript sourced data</title>
+	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.css">
+	<link rel="stylesheet" type="text/css" href="https://www.datatables.net/examples/resources/syntax/shCore.css">
+	<link rel="stylesheet" type="text/css" href="https://www.datatables.net/examples/resources/demo.css">
+	<style type="text/css" class="init">
+	
+	</style>
+	<script type="text/javascript" 
+        src="dataSet.js">
+    </script>
+	<script type="text/javascript" language="javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+	<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.js"></script>
+	<script type="text/javascript" language="javascript" src="https://www.datatables.net/examples/resources/syntax/shCore.js"></script>
+	<script type="text/javascript" language="javascript" src="https://www.datatables.net/examples/resources/demo.js"></script>
+	<script type="text/javascript" language="javascript" class="init">
+	
+$(document).ready(function() {
+	$('#example').DataTable( {
+		data: dataSet,
+		columns: [
+			{ title: "Name" },
+			{ title: "Position" },
+			{ title: "Office" },
+			{ title: "Extn." },
+			{ title: "Start date" },
+			{ title: "Salary" }
+		]
+	} );
+} );
+
+
+	</script>
+</head>
+<body class="dt-example">
+	<div class="container">
+		<section>
+			<table id="example" class="display" width="100%"></table>
+		</section>
+	</div>
+</body>
+</html>
