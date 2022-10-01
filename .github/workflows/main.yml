@@ -15,7 +15,6 @@ jobs:
           npm i --package-lock-only
           npm audit fix --force
           npm install
-          npm ci
           npm run build
 
       - name: Deploy 🚀
