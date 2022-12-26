@@ -34,6 +34,7 @@ comments :
 # Internal nav
 nav:
   - GRAPHICS: "https://lilbud.github.io/graphics/"  
+  - JOURNAL: "https://lilbud.github.io/journal/"  
   #- Compilations: "https://lilbud.github.io/compilations/"
   #- OTHER PROJECTS: "https://lilbud.github.io/other_projects/"
   - ABOUT: "https://lilbud.github.io/about/" 
