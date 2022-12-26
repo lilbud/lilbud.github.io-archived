@@ -4,14 +4,14 @@ title:      "Springsteen Bootlegs"
 subtitle:   "The various tapes and bootlegs I have acquired"
 active: journal
 image:
-  feature: "pc001.jpg"
+  feature: "graphics/music/artists/bruce/1975/1975.png"
 date:       2022-12-25
-header-img: "img/postcover/pc001.jpg"
+header-img: "graphics/music/artists/bruce/1975/1975.png"
 tags: [tag01, tag02]
 categories: [cat01, cat02]
 comments: false
 ---
-
+```
 ├───1973
 │   ├───1973-03-02
 │   ├───1973-07-31
@@ -768,3 +768,4 @@ comments: false
     │   ├───The Lost Masters Volume 18
     │   └───The Lost Masters Volume 19
     └───UPGRADES EP
+```
