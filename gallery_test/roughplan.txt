@@ -1,0 +1,13 @@
+to-do (possible):
+rewrite to be lighter (currently around 300mb, most of which I don't use at all)
+also make easier to maintain, as adding new pages is a nightmare
+
+needs:
+image gallery (simple, nothing flashy)
+some sort of blog section with simple markdown files
+
+image gallery:
+    basic enough, uses lightbox2, and scales to window. 
+    much easier to setup, file is only about 20 lines (and less than a KB) and it handles everything
+
+make site as easy to update as possible
