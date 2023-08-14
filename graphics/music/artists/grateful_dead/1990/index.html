@@ -17,14 +17,14 @@ album-title: "Shows"
 	<section id="content" role="main">
 		<div class="wrapper">
 	<br><br>
-			<h2>{{page.album-title}}</h2><center><a href="https://download-directory.github.io?url=https://github.com/lilbud/Bootleg-Covers/tree/main/Grateful_Dead/Covers/{{ page.title }}">Download All Covers</a></center><br>
+			<h2>{{page.album-title}}</h2><center><a href="https://download-directory.github.io?url=https://github.com/lilbud/Bootleg-Covers/tree/main/Grateful_Dead/_covers/{{ page.title }}">Download All Covers</a></center><br>
 
 
 			<!-- Gallery __-->
 			<div class="gallery masonry-gallery">
 				
         {% for image in site.static_files %}
-        {% if image.path contains "Grateful_Dead/Covers/1990" %}
+        {% if image.path contains "Grateful_Dead/_covers/1990" %}
 
         <figure class="gallery-item">
 					<header class='gallery-icon'>
